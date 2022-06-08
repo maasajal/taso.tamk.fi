@@ -27,14 +27,14 @@ export default function App() {
       <NavbarMenu />
       <Routes>
         <Route path="/" element={<FrontPage />} />
-        <Route path="membership" element={<Membership />} />
-        <Route path="news" element={<News />} />
-        <Route path="proceedings" element={<Proceedings />} />
-        <Route path="advances" element={<Advances />} />
-        <Route path="contact" element={<Contact />} />
-        <Route path="partners" element={<Partners />} />
+        <Route path="/membership" element={<Membership />} />
+        <Route path="/news" element={<News />} />
+        <Route path="/proceedings" element={<Proceedings />} />
+        <Route path="/advances" element={<Advances />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/partners" element={<Partners />} />
         <Route
-          path="*"
+          path="/*"
           element={
             <main style={{ padding: "1rem" }}>
               <p>There's nothing here!</p>
