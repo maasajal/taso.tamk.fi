@@ -16,18 +16,18 @@ export default function Footer() {
   };
 
   const items = [
-    <a href="#" target="_blank"><img src="images/partner.png" onDragStart={handleDragStart} role="presentation" /></a>,
-    <a href="#" target="_blank"><img src="images/partner.png" onDragStart={handleDragStart} role="presentation" /></a>,
-    <a href="#" target="_blank"><img src="images/partner.png" onDragStart={handleDragStart} role="presentation" /></a>,
-    <a href="#" target="_blank"><img src="images/partner.png" onDragStart={handleDragStart} role="presentation" /></a>,
-    <a href="#" target="_blank"><img src="images/partner.png" onDragStart={handleDragStart} role="presentation" /></a>,
-    <a href="#" target="_blank"><img src="images/partner.png" onDragStart={handleDragStart} role="presentation" /></a>,
-    <a href="#" target="_blank"><img src="images/partner.png" onDragStart={handleDragStart} role="presentation" /></a>,
-    <a href="#" target="_blank"><img src="images/partner.png" onDragStart={handleDragStart} role="presentation" /></a>,
-    <a href="#" target="_blank"><img src="images/partner.png" onDragStart={handleDragStart} role="presentation" /></a>,
-    <a href="#" target="_blank"><img src="images/partner.png" onDragStart={handleDragStart} role="presentation" /></a>,
-    <a href="#" target="_blank"><img src="images/partner.png" onDragStart={handleDragStart} role="presentation" /></a>,
-    <a href="#" target="_blank"><img src="images/partner.png" onDragStart={handleDragStart} role="presentation" /></a>,
+    <a href="https://www.google.com/" target="_blank" rel="noreferrer"><img src="images/partner.png" alt="" onDragStart={handleDragStart} role="presentation" /></a>,
+    <a href="https://www.google.com/" target="_blank" rel="noreferrer"><img src="images/partner.png" alt="" onDragStart={handleDragStart} role="presentation" /></a>,
+    <a href="https://www.google.com/" target="_blank" rel="noreferrer"><img src="images/partner.png" alt="" onDragStart={handleDragStart} role="presentation" /></a>,
+    <a href="https://www.google.com/" target="_blank" rel="noreferrer"><img src="images/partner.png" alt="" onDragStart={handleDragStart} role="presentation" /></a>,
+    <a href="https://www.google.com/" target="_blank" rel="noreferrer"><img src="images/partner.png" alt="" onDragStart={handleDragStart} role="presentation" /></a>,
+    <a href="https://www.google.com/" target="_blank" rel="noreferrer"><img src="images/partner.png" alt="" onDragStart={handleDragStart} role="presentation" /></a>,
+    <a href="https://www.google.com/" target="_blank" rel="noreferrer"><img src="images/partner.png" alt="" onDragStart={handleDragStart} role="presentation" /></a>,
+    <a href="https://www.google.com/" target="_blank" rel="noreferrer"><img src="images/partner.png" alt="" onDragStart={handleDragStart} role="presentation" /></a>,
+    <a href="https://www.google.com/" target="_blank" rel="noreferrer"><img src="images/partner.png" alt="" onDragStart={handleDragStart} role="presentation" /></a>,
+    <a href="https://www.google.com/" target="_blank" rel="noreferrer"><img src="images/partner.png" alt="" onDragStart={handleDragStart} role="presentation" /></a>,
+    <a href="https://www.google.com/" target="_blank" rel="noreferrer"><img src="images/partner.png" alt="" onDragStart={handleDragStart} role="presentation" /></a>,
+    <a href="https://www.google.com/" target="_blank" rel="noreferrer"><img src="images/partner.png" alt="" onDragStart={handleDragStart} role="presentation" /></a>,
   ];
 
   return (
