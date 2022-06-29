@@ -1,14 +1,18 @@
 import React from 'react';
+import './i18n';
 import { createRoot } from 'react-dom/client';
 import {
   BrowserRouter,
 } from "react-router-dom";
 import App from "./App";
+import { AuthContextProvider } from "./routes/admin/AuthContext";
 
 const rootElement = document.getElementById("root");
 const root = createRoot(rootElement);
 root.render(
   <BrowserRouter>
-    <App />
+    <AuthContextProvider>
+      <App />
+    </AuthContextProvider>
   </BrowserRouter>
 );

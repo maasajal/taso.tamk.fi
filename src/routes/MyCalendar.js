@@ -2,13 +2,15 @@
 import { useState } from 'react';
 import Calendar from 'react-calendar';
 import 'react-calendar/dist/Calendar.css';
+import {useTranslation} from 'react-i18next';
 
 function MyCalendar() {
+  const {t, i18n } = useTranslation();
   const [date, setDate] = useState(new Date());
 
   return (
     <div className='app'>
-      <h1 className='text-center'>React Calendar</h1>
+      <h1 className='text-center'>{t('react-calendar')}</h1>
       <div className='calendar-container'>
         <Calendar
           onChange={setDate}
@@ -25,7 +27,7 @@ function MyCalendar() {
         </p>
       ) : (
         <p className='text-center'>
-          <span className='bold'>Default selected date:</span>{' '}
+          <span className='bold'>{t('calendardefault-date')}</span>{' '}
           {date.toDateString()}
         </p>
       )}

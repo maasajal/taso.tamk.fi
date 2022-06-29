@@ -1,28 +1,31 @@
 import React from 'react';
 import Button from 'react-bootstrap/Button';
+import {useTranslation} from 'react-i18next';
 
 function Membership() {
+  const {t, i18n } = useTranslation();
+
     return (
       <main>
-        <h1>Membership</h1>
+        <h1>{t('membership-title')}</h1>
         <div className="text-left">
-          <p>TASO ry’s membership fee is a paltry €5/academic year, and you can join through Kide.app</p>
-          <p>Membership of the Tampere Electric Students TASO Association for the academic year</p>
+          <p>{t('membership-description1')}</p>
+          <p>{t('membership-description2')}</p>
 
-          By purchasing this product, you accept the rules of Tampereen Sähköopiskelijat TASO ry taso.tamk.fi/?page_id=13 and that
+         {t('membership-description3')}
 
-          <p>Tampereen Sähköopiskelijat TASO ry stores the information in the member register. The information is used to verify and inform the membership. The information will not be disclosed to third parties.</p>
+          <p>{t('membership-description4')}</p>
           <p>
-          As a member you can
+          {t('member-benefit')}
           <ul>
-            <li>- take part in events for members, such as sauna evenings</li>
-            <li>- take part in company visits</li>
-            <li>- get coffee or tea from the club room for free</li>
-            <li>- take advantage of TASO's weekly exercise</li>
-            <li>- take part in events organized by TASO</li>
+            <li>{t('benefit1')}</li>
+            <li>{t('benefit2')}</li>
+            <li>{t('benefit3')}</li>
+            <li>{t('benefit4')}</li>
+            <li>{t('benefit5')}</li>
           </ul>
           </p>
-          <Button variant="outline-primary" href="https://kide.app/memberships/098dba4a-978e-4f2b-91f5-e60e0f82602a" target="_blank">Join as a Member</Button>
+          <Button variant="outline-primary" href="https://kide.app/memberships/098dba4a-978e-4f2b-91f5-e60e0f82602a" target="_blank">{t('joinasmember-button')}</Button>
         </div>
       </main>
     );

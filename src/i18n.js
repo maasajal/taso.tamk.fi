@@ -1,24 +1,31 @@
-import i18next from "i18next";
-import HttpBackend from "i18next-http-backend";
-import LanguageDetector from "i18next-browser-languagedetector";
-import { initReactI18next } from "react-i18next";
+import i18n from 'i18next';
+import { initReactI18next } from 'react-i18next';
 
-const apiKey = "U4Ab6rJHWHbx9HdhHrdNHQ";
-const loadPath = `https://api.i18nexus.com/project_resources/translations/{{lng}}/{{ns}}.json?api_key=${apiKey}`;
+import TranslationEN from './locales/en/translationEN.json';
+import TranslationFI from './locales/fi/translationFI.json';
 
-i18next
-  .use(HttpBackend)
-  .use(LanguageDetector)
-  .use(initReactI18next)
-  .init({
-    fallbackLng: "en",
+// the translations
 
-    ns: ["default"],
-    defaultNS: "default",
-
-    supportedLngs: ["en","fi"],
-    
-    backend: {
-      loadPath: loadPath
+const resources = {
+    en: {
+        translation: TranslationEN
+    },
+    fi: {
+        translation: TranslationFI
     }
-  })
+};
+
+i18n
+    .use(initReactI18next) // passes i18n down to react-i18next
+    .init({
+        resources,
+        lng: 'fi',
+
+        keySeparator: false, // we do not use keys in form messages.welcome
+
+        interpolation: {
+            escapeValue: false // react already safes from xss
+        }
+    })
+
+ export default i18n;
