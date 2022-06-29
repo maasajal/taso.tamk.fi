@@ -7,7 +7,7 @@ import { LinkContainer } from 'react-router-bootstrap';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import i18n from '../i18n';
-import {useTranslation} from 'react-i18next';
+import { useTranslation } from 'react-i18next';
 
 const changeLanguage = (ln) => {
     return ()=> {
@@ -16,7 +16,7 @@ const changeLanguage = (ln) => {
 }
 
 function NavbarMenu() {
-    const {t, i18n } = useTranslation();
+    const { t } = useTranslation();
    // It is a hook imported from 'react-i18next'
 
     return(

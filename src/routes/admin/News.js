@@ -3,9 +3,9 @@ import Card from 'react-bootstrap/Card';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
-import { FiFacebook, FiInstagram } from "react-icons/fi";
+import { FiFacebook } from "react-icons/fi";
 import { FacebookButton } from 'react-social';
-import {useTranslation} from 'react-i18next';
+import { useTranslation } from 'react-i18next';
 import {
     doc,
     collection,
@@ -48,7 +48,7 @@ function News() {
           setNews(data.docs.map((doc) => ({...doc.data(), id: doc.id })));
         };
         getNews();
-    }, [])
+    }, [newsCollectionRef])
     // To delete news, admin is able to delete any news content
     const deleteNews = async (id) => {
         const newsDoc = doc(db, "news", id);

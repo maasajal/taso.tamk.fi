@@ -2,10 +2,10 @@ import React from 'react';
 import "react-alice-carousel/lib/alice-carousel.css";
 import AliceCarousel from 'react-alice-carousel';
 import 'react-alice-carousel/lib/alice-carousel.css';
-import {useTranslation} from 'react-i18next';
+import { useTranslation } from 'react-i18next';
 
 export default function Footer() {
-  const {t, i18n } = useTranslation();
+  const { t } = useTranslation();
 
     const handleDragStart = (e) => e.preventDefault();
 

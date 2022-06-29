@@ -1,12 +1,10 @@
 import React from 'react';
 import Banner from './Banner';
 import MyCalendar from './MyCalendar';
-import {useTranslation} from 'react-i18next';
-//import AnimatedText from 'react-animated-text-content';
-
+import { useTranslation } from 'react-i18next';
 
 function FrontPage() {
-    const {t, i18n } = useTranslation();
+    const { t } = useTranslation();
     return(
         <div className="bannar">
             <Banner />

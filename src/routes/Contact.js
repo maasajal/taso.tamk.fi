@@ -11,11 +11,11 @@ import {
   from 'firebase/firestore';
 import { useEffect, useState } from 'react';
 import { db } from './FirebaseConfig';
-import {useTranslation} from 'react-i18next';
+import { useTranslation } from 'react-i18next';
 
 
 function Contact() {
-  const {t, i18n } = useTranslation();
+  const { t } = useTranslation();
 
   const [members, setMembers] = useState([]);
   const memberCollectionRef = collection(db, "board-contacts");
@@ -27,7 +27,7 @@ function Contact() {
       };
 
       getMembers();
-    }, [])
+    }, [memberCollectionRef])
 
 
     return (
@@ -76,7 +76,7 @@ function Contact() {
                   <h3>{t('location')}</h3>
                 </Col>
                 <Col>
-                  <a href="https://goo.gl/maps/8T7Aief7NLnuwCaA8" target="_blank" title="Click here to open google maps!">
+                  <a href="https://goo.gl/maps/8T7Aief7NLnuwCaA8" target="_blank" title="Click here to open google maps!" rel="noreferrer" >
                     <address>
                       <MdLocationOn /> Kuntokatu 3 A0-18<br />
                     33520, Tampere, Finland</address>
@@ -89,7 +89,7 @@ function Contact() {
                   <h3>{t('phone')}</h3>
                 </Col>
                 <Col>
-                  <a href="callto:+3582020202020" title="Click here to call!">
+                  <a href="callto:+3582020202020" title="Click here to call!" rel="noreferrer">
                   <FiPhoneCall />  +358 20 20202020</a>
                 </Col>
                 <hr />
@@ -99,7 +99,7 @@ function Contact() {
                   <h3>{t('email')}</h3>
                 </Col>
                 <Col>
-                  <a href="mailto:tampereensahkoopiskelijat@gmail.com" title="Click here to send email!"> <MdOutlineMail />  tampereensahkoopiskelijat@gmail.com</a>
+                  <a href="mailto:tampereensahkoopiskelijat@gmail.com" title="Click here to send email!" rel="noreferrer"> <MdOutlineMail />  tampereensahkoopiskelijat@gmail.com</a>
                 </Col>
               </Row>
             </Col>

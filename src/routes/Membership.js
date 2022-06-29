@@ -1,9 +1,9 @@
 import React from 'react';
 import Button from 'react-bootstrap/Button';
-import {useTranslation} from 'react-i18next';
+import { useTranslation } from 'react-i18next';
 
 function Membership() {
-  const {t, i18n } = useTranslation();
+  const { t } = useTranslation();
 
     return (
       <main>

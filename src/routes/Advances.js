@@ -1,9 +1,9 @@
 import React from 'react';
 import "../App.css";
-import {useTranslation} from 'react-i18next';
+import { useTranslation } from 'react-i18next';
 
 function Advances() {
-    const {t, i18n } = useTranslation();
+    const { t } = useTranslation();
 
     return (
       <main>

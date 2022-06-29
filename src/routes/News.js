@@ -41,7 +41,7 @@ function News() {
           setNews(data.docs.map((doc) => ({...doc.data(), id: doc.id })));
         };
         getNews();
-      }, [])
+      }, [newsCollectionRef])
 
     // For testing purpose + to share news used this url.
     let url = "https://taso-tamk-fi.netlify.app/";

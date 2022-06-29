@@ -2,10 +2,10 @@
 import { useState } from 'react';
 import Calendar from 'react-calendar';
 import 'react-calendar/dist/Calendar.css';
-import {useTranslation} from 'react-i18next';
+import { useTranslation } from 'react-i18next';
 
 function MyCalendar() {
-  const {t, i18n } = useTranslation();
+  const { t } = useTranslation();
   const [date, setDate] = useState(new Date());
 
   return (
