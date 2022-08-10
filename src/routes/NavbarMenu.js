@@ -3,7 +3,6 @@ import "../App.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { FiFacebook, FiInstagram, FiUser } from "react-icons/fi";
 import Container from 'react-bootstrap/Container';
-import { LinkContainer } from 'react-router-bootstrap';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import i18n from '../i18n';
@@ -23,21 +22,19 @@ function NavbarMenu() {
         <div className="menu">
             <Navbar fixed="top" collapseOnSelect expand="lg" bg="dark" variant="dark">
                 <Container>
-                    <LinkContainer to="/">
-                        <Navbar.Brand>
-                            <img src="TASO-logo.png" alt="TASO logo"/>
-                        </Navbar.Brand>
-                    </LinkContainer>
+                    <Navbar.Brand href="/">
+                        <img src="TASO-logo.png" alt="TASO logo" />
+                    </Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="me-auto">
-                            <LinkContainer to="/"><Nav.Link>{t('nav1')}</Nav.Link></LinkContainer>
-                            <LinkContainer to="/membership"><Nav.Link>{t('nav2')}</Nav.Link></LinkContainer>
-                            <LinkContainer to="/news"><Nav.Link>{t('nav3')}</Nav.Link></LinkContainer>
-                            <LinkContainer to="/proceedings"><Nav.Link>{t('nav4')}</Nav.Link></LinkContainer>
-                            <LinkContainer to="/advances"><Nav.Link>{t('nav5')}</Nav.Link></LinkContainer>
-                            <LinkContainer to="/contact"><Nav.Link>{t('nav6')}</Nav.Link></LinkContainer>
-                            <LinkContainer to="/partners"><Nav.Link>{t('nav7')}</Nav.Link></LinkContainer>
+                            <Nav.Link href="/">{t('nav1')}</Nav.Link>
+                            <Nav.Link href="/membership">{t('nav2')}</Nav.Link>
+                            <Nav.Link href="/news">{t('nav3')}</Nav.Link>
+                            <Nav.Link href="/proceedings">{t('nav4')}</Nav.Link>
+                            <Nav.Link href="/advances">{t('nav5')}</Nav.Link>
+                            <Nav.Link href="/contact">{t('nav6')}</Nav.Link>
+                            <Nav.Link href="/partners">{t('nav7')}</Nav.Link>
                         </Nav>
                         <Nav className="languageChangeButton">
                             <Nav.Link><button onClick={changeLanguage("en")}>EN</button></Nav.Link>
