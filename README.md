@@ -1,70 +1,38 @@
-# Getting Started with Create React App
+# Tampereen Sähköopiskelijat TASO RY at TAMK
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+TASO is a sub-association of the Tampere University of Applied Sciences (TAMK) student body (TAMKO). The majority of the club's members are electrical and automation students, but since any student at TAMK can become a member of TASO, many students from different degree programs have joined the strength of TASO.
 
-## Available Scripts
+The purpose of Tampereen sähköopiskelijat TASO ry (freely translated as the Electrical Engineering students of Tampere) is to enhance our members knowledge of the electrical engineering trade and offer them facilities, equipment and materials to carry out their own projects. In addition, we have a spacious office in the downstairs of the electrical wing of the Kuntokatu Campus (A0-18) where we offer five-star services and equipment, such as computers, a refrigerator and a coffee maker. You can find us by following the smell of smoke and the signs that start by the elevator. When possible, TASO ry aims to organize small-scale activities for its members, such as excursions to industrial plants and visits to fairs dedicated to the electrical trade. We aim to also organize more relaxed forms of entertainment, such as sauna evenings, when there is demand.
+
+Because TASO ry consists of students from different student year groups, we also offer assistance in matters related to electrical and electronics, studying and whatever else you may require. TASO ry’s membership fee is a paltry €5/academic year, and you can join through Kide.app
+
+## Live Demo: [TASO RY at TAMK](https://taso-tamk-fi.netlify.app)
+
+## If you want to test the code clone the repository on your local machine
+
+* Run the project on your Local machine
+
+  - Clone: `git clone https://github.com/maasajal/taso.tamk.fi.git`
+  - Change Directory: `cd taso.tamk.fi`
 
 In the project directory, you can run:
 
-### `npm start`
+  - Install packages: `npm i` or `npm install`
+  - Run: `npm run dev`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Key Features:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Language
+- News page
+- Membership page
+- Social Sharing 
+- Admin panel
 
-### `npm test`
+### Technical Highlights:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- React
+- React Bootstrap
+- Firebase: Readtime datastore, firebase auth
+- Responsive Design: Optimized for both desktop and mobile devices.
+- Calender
+- Carousel
